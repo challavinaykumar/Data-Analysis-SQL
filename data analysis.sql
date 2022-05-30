@@ -1,0 +1,14 @@
+-- select * from sales.customers
+-- select * from sales.date
+-- select * from sales.markets
+-- select * from sales.products
+-- select * from sales.transactions
+-- select count(*) from sales.transactions
+-- select count(*) from sales.customers
+-- select * from sales.transactions limit 5
+-- select * from sales.transactions where market_code="mark001"
+-- select count(*) from sales.transactions where market_code="mark001"
+-- SELECT count(*) FROM sales.transactions where currency="USD";
+-- SELECT sum(sales.transactions.sales_amount) From sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date 
+-- where sales.date.year=2020 and sales.transactions.market_code="MARK001" ;
+select distinct product_code from sales.transactions where market_code="mark001"
